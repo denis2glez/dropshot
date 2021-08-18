@@ -74,3 +74,11 @@ trybuild = "1.0.31"
 [dev-dependencies.schemars]
 version = "0.8.0"
 features = [ "chrono", "uuid" ]
+
+[dev-dependencies.criterion]
+version = "0.3"
+features = ["html_reports", "async_tokio"]
+
+[[bench]]
+name = "bench_main"
+harness = false
